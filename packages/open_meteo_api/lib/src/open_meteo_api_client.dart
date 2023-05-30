@@ -12,10 +12,10 @@ class WeatherRequestFailure implements Exception {}
 
 class WeatherNotFoundFailure implements Exception {}
 
-class OpenMetroApiClient {
+class OpenMeteoApiClient {
   final http.Client _httpClient;
 
-  OpenMetroApiClient({http.Client? httpClient})
+  OpenMeteoApiClient({http.Client? httpClient})
       : _httpClient = httpClient ?? http.Client();
 
   // Base URL
